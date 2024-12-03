@@ -38,7 +38,12 @@
 
         eq {
             bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+            key-positions = <30 31>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <18 19>;
         };
     };
 
