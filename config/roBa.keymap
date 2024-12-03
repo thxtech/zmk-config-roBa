@@ -74,21 +74,26 @@
         kakko1: kakko1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS>;
+            bindings =
+                <&macro_tap>,
+                <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS>;
+
             label = "KAKKO1";
         };
 
         kakko2: kakko2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE>;
+            bindings = <&macro_tap>, <&kp LEFT_BRACE &kp RIGHT_BRACE>;
+
             label = "KAKKO2";
         };
 
         kakko3: kakko3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET>;
+            bindings = <&macro_tap>, <&kp LEFT_BRACKET &kp RIGHT_BRACKET>;
+
             label = "KAKKO3";
         };
     };
@@ -107,7 +112,9 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
             // 追加: スクロールのタップ時間を設定 (20ms)
+
             tap-ms = <20>;
         };
     };
