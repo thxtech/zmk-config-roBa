@@ -67,13 +67,13 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W      &kp E      &kp R          &kp T                                                &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S      &kp D      &kp F          &kp G                &kp LS(LG(S))    &kp MINUS      &kp H        &kp J  &lt 5 K    &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X      &kp C      &kp V          &kp B                &kp COLON        &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp ESCAPE        &kp LANG2  &kp LANG1  &mt LCTRL TAB  &mt LEFT_WIN ESCAPE  &lt 1 UNDER      &lt 2 ENTER    &lt 3 SPACE                             &kp EQUAL
+&kp Q             &kp W      &kp E      &kp R          &kp T                                                       &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S      &kp D      &kp F          &kp G                &kp LS(LG(NUMBER_4))    &kp MINUS      &kp H        &kp J  &lt 5 K    &kp L    &kp SQT
+&mt LEFT_SHIFT Z  &kp X      &kp C      &kp V          &kp B                &kp COLON               &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp ESCAPE        &kp LANG2  &kp LANG1  &mt LCTRL TAB  &mt LEFT_WIN ESCAPE  &lt 1 UNDER             &lt 2 ENTER    &lt 3 SPACE                             &kp EQUAL
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         Number {
@@ -88,7 +88,7 @@
         Kigou {
             bindings = <
 &kp QUESTION  &trans    &trans      &trans     &trans                             &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp PERCENT
-&kp AT        &kp HASH  &kp DOLLAR  &kp TILDE  &trans           &trans    &trans  &kp CARET       &trans                &kp ASTERISK           &trans           &trans
+&kp AT        &kp HASH  &kp DOLLAR  &kp TILDE  &trans           &trans    &trans  &kp CARET       &kp MINUS             &kp ASTERISK           &trans           &trans
 &trans        &trans    &trans      &trans     &kp EXCLAMATION  &trans    &trans  &kp AMPERSAND   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans           &kp PIPE
 &trans        &trans    &trans      &trans     &trans           &trans    &trans  &trans                                                                        &kp BACKSLASH
             >;
