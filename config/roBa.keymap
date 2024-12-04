@@ -112,7 +112,9 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             // 追加: スクロールのタップ時間を設定 (20ms)
+
             tap-ms = <20>;
         };
     };
@@ -127,6 +129,7 @@
 &mt LEFT_SHIFT Z  &kp X      &kp C      &kp V          &kp B                &trans                  &trans       &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp ESCAPE        &kp LANG2  &kp LANG1  &mt LCTRL TAB  &mt LEFT_WIN ESCAPE  &lt 1 UNDER             &lt 2 ENTER  &lt 3 SPACE                             &kp EQUAL
             >;
+
             sensor-bindings = <&scroll_up_down>;
         };
 
@@ -142,7 +145,7 @@
         Kigou {
             bindings = <
 &kp QUESTION  &trans    &trans      &trans     &trans                             &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp PERCENT
-&kp AT        &kp HASH  &kp DOLLAR  &kp TILDE  &trans           &trans    &trans  &kp CARET       &kp MINUS             &kp ASTERISK           &kp COLON        &kp SEMI
+&kp AT        &kp HASH  &kp DOLLAR  &kp TILDE  &kp GRAVE        &trans    &trans  &kp CARET       &kp MINUS             &kp ASTERISK           &kp COLON        &kp SEMI
 &trans        &trans    &trans      &trans     &kp EXCLAMATION  &trans    &trans  &kp AMPERSAND   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans           &kp PIPE
 &trans        &trans    &trans      &trans     &trans           &trans    &trans  &trans                                                                        &kp BACKSLASH
             >;
