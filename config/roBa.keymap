@@ -6,7 +6,7 @@
 #define MOUSE 4
 #define SCROLL 5
 #define NUM 6
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 10
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 100
 
 &mt {
     flavor = "balanced";
@@ -112,9 +112,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-
             // 追加: スクロールのタップ時間を設定 (20ms)
-
             tap-ms = <20>;
         };
     };
@@ -123,15 +121,13 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            sensor-bindings = <&scroll_up_down>;
             bindings = <
 &kp Q             &kp W      &kp E      &kp R          &kp T                                                     &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &kp A             &kp S      &kp D      &kp F          &kp G                &kp LS(LG(NUMBER_4))    &trans       &kp H        &kp J  &kp K      &kp L    &kp SQT
 &mt LEFT_SHIFT Z  &kp X      &kp C      &kp V          &kp B                &trans                  &trans       &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp ESCAPE        &kp LANG2  &kp LANG1  &mt LCTRL TAB  &mt LEFT_WIN ESCAPE  &lt 1 UNDER             &lt 2 ENTER  &lt 3 SPACE                             &kp EQUAL
             >;
-
-            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         Number {
