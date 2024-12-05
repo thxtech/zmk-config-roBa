@@ -159,7 +159,7 @@
 &trans            &trans            &trans            &kp LANG2         &kp LANG1         &trans        &trans  &trans                                                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(C_VOLUME_UP) LC(C_VOLUME_DOWN)>;
+            sensor-bindings = <&inc_dec_kp LC(C_VOLUME_DOWN) LC(C_VOLUME_UP)>;
         };
 
         MOUSE {
