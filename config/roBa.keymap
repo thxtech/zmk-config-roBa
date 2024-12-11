@@ -144,10 +144,10 @@
 
         Kigou {
             bindings = <
-&kp QUESTION  &trans    &trans      &trans     &trans                             &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp PERCENT
-&kp AT        &kp HASH  &kp DOLLAR  &kp TILDE  &kp GRAVE        &trans    &trans  &kp CARET       &kp MINUS             &kp ASTERISK           &kp COLON        &kp SEMI
-&trans        &trans    &trans      &trans     &kp EXCLAMATION  &trans    &trans  &kp AMPERSAND   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans           &kp PIPE
-&trans        &trans    &trans      &trans     &trans           &trans    &trans  &trans                                                                        &kp BACKSLASH
+&kp QUESTION  &trans    &trans      &trans           &trans                             &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp PERCENT
+&kp AT        &kp HASH  &kp DOLLAR  &kp TILDE        &kp GRAVE        &trans    &trans  &kp CARET       &kp MINUS             &kp ASTERISK           &kp COLON        &kp SEMI
+&trans        &trans    &trans      &kp EXCLAMATION  &kp EXCLAMATION  &trans    &trans  &kp AMPERSAND   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans           &kp PIPE
+&trans        &trans    &trans      &trans           &trans           &trans    &trans  &trans                                                                        &kp BACKSLASH
             >;
         };
 
