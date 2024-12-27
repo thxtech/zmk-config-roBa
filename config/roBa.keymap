@@ -154,10 +154,10 @@
 
         Contol {
             bindings = <
-&kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)                            &kp LC(Y)  &kp LS(LC(TAB))  &kp LC(TAB)  &trans     &trans
-&kp LS(LA(A))     &kp LS(LA(S))     &kp LA(LS(W))     &kp LA(LS(D))     &kp LA(LS(F))     &kp K_MUTE        &trans  &kp LA(H)  &kp LA(J)        &kp LA(K)    &kp LA(L)  &trans
-&kp LS(LG(A))     &kp LG(LS(S))     &kp LS(LG(W))     &kp LG(LS(D))     &trans            &trans            &trans  &trans     &trans           &kp LA(H)    &kp LA(L)  &trans
-&kp LSHIFT        &trans            &trans            &kp LANG2         &kp LANG1         &kp LC(K_MUTE)    &trans  &trans                                              &trans
+&kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)                            &kp LC(Y)       &kp LS(LC(TAB))  &kp LC(TAB)     &trans           &trans
+&kp LS(LA(A))     &kp LS(LA(S))     &kp LA(LS(W))     &kp LA(LS(D))     &kp LA(LS(F))     &kp K_MUTE        &trans  &kp LEFT_ARROW  &kp UP_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&kp LS(LG(A))     &kp LG(LS(S))     &kp LS(LG(W))     &kp LG(LS(D))     &trans            &trans            &trans  &trans          &trans           &kp LA(H)       &kp LA(L)        &trans
+&kp LSHIFT        &trans            &trans            &kp LANG2         &kp LANG1         &kp LC(K_MUTE)    &trans  &trans                                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(C_VOLUME_DOWN) LC(C_VOLUME_UP)>;
