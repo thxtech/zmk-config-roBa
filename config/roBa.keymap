@@ -156,7 +156,7 @@
             bindings = <
 &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)                            &kp LC(Y)       &kp LS(LC(TAB))  &kp LC(TAB)   &trans           &trans
 &kp LS(LA(A))     &kp LS(LA(S))     &kp LA(LS(W))     &kp LA(LS(D))     &kp LA(LS(F))     &kp K_MUTE        &trans  &kp LEFT_ARROW  &kp DOWN         &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&kp LS(LG(A))     &kp LG(LS(S))     &kp LS(LG(W))     &kp LG(LS(D))     &kp LEFT_SHIFT    &trans            &trans  &trans          &kp LA(H)        &kp LA(J)     &kp LA(LS(K))    &kp LA(L)
+&kp LS(LG(A))     &kp LG(LS(S))     &kp LS(LG(W))     &kp LG(LS(D))     &kp LEFT_SHIFT    &trans            &trans  &kp LA(H)       &kp LA(J)        &kp LA(K)     &kp LA(L)        &trans
 &kp LSHIFT        &trans            &trans            &kp LEFT_SHIFT    &kp LEFT_SHIFT    &kp LC(K_MUTE)    &trans  &trans                                                          &trans
             >;
 
